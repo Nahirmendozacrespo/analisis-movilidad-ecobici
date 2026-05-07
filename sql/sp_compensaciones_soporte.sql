@@ -1,0 +1,56 @@
+-- Caso hipotetico para "automatizar el flujo de usuarios"
+-- SELECT: Busca el viaje trabado.
+-- UPDATE: Cierra el viaje para que no le cobren de más al usuario.
+-- INSERT: Le regala un dia gratis por las molestias.
+
+CREATE TABLE compensaciones_soporte (
+    id_ticket INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT,
+    estacion_del_problema VARCHAR(150),
+    motivo VARCHAR(200),
+    fecha_ticket DATETIME
+);
+
+DELIMITER //
+
+CREATE PROCEDURE sp_cierre_forzado_soporte(
+    IN p_id_usuario INT,
+    IN p_estacion_origen VARCHAR(150)
+)
+BEGIN
+    -- 0. Preparamos el cinturón de seguridad: Si hay CUALQUIER error de MySQL, cancela todo.
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION 
+    BEGIN
+        ROLLBACK;
+        SELECT 'ERROR CRÍTICO: Se canceló la operación. No se modificó nada.' AS Resultado;
+    END;
+
+    START TRANSACTION;
+
+    -- PASO 1: UPDATE (Corregir el viaje trabado de ese usuario en esa estación)
+    -- Le ponemos la duración en 0 para borrarle la deuda.
+    UPDATE recorridos
+    SET duracion_recorrido = 0
+    WHERE id_usuario = p_id_usuario 
+      AND nombre_estacion_origen = p_estacion_origen 
+      AND duracion_recorrido > 300; -- Asumimos que los trabados tienen duraciones falsas altísimas
+
+    -- PASO 2: INSERT (Otorgar la compensación en la nueva tabla)
+    INSERT INTO compensaciones_soporte (id_usuario, estacion_del_problema, motivo, fecha_ticket)
+    VALUES (
+        p_id_usuario, 
+        p_estacion_origen, 
+        'Viaje trabado en anclaje. Se anuló el cobro y se generó ticket.', 
+        NOW()
+    );
+
+    COMMIT;
+    
+    -- Le devolvemos un mensaje de éxito al agente del Call Center en su pantalla
+    SELECT 'ÉXITO: Viaje cerrado y ticket de compensación generado correctamente.' AS Resultado;
+
+END; //
+
+DELIMITER ;
+
+CALL sp_cierre_forzado_soporte(40050, '014 - Pacifico');
