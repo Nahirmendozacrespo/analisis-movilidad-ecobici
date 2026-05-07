@@ -1,0 +1,2 @@
+﻿Fecha_Intento,Comando_SQL,ID_Usuario_Implicado,Codigo_Error,Mensaje_Sistema
+2026-05-07 19:35:03,INSERT INTO recorridos...,5555,1644,ALERTA SEGURIDAD: La duración supera las 24 horas. Operación cancelada.
