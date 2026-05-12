@@ -47,6 +47,6 @@ Para garantizar la reproducibilidad del análisis, todo el flujo de transformaci
 Visualización: Desarrollo de un Dashboard interactivo en Power BI enfocado en el Storytelling de negocios.
 
 📊 Visualización del Dashboard
-[https://github.com/Nahirmendozacrespo/analisis-movilidad-ecobici/blob/main/powerbi/Proyecto_ecobici_page-0007.jpg]
+<img width="712" height="413" alt="image" src="https://github.com/user-attachments/assets/2ad906c9-f384-465a-ba20-bafa7052236e" />
 
 Drive para descargar el pbix. [https://drive.google.com/file/d/1nlstGKeUQ6B7BNPDiM61usNBC3F1xDZs/view]
