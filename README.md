@@ -51,7 +51,7 @@ Visualización: Desarrollo de un Dashboard interactivo en Power BI enfocado en e
 📊 Visualización del Dashboard
 <img width="712" height="413" alt="image" src="https://github.com/user-attachments/assets/2ad906c9-f384-465a-ba20-bafa7052236e" />
 
-Drive para descargar el pbix. [https://drive.google.com/file/d/1nlstGKeUQ6B7BNPDiM61usNBC3F1xDZs/view]
+Drive para descargar el pbix. [https://drive.google.com/drive/folders/1hqR2Uf9m-05fDZEeEqVKhFB4C-wSr4QN?usp=sharing]
 
 📊 Datos públicos del Gobierno de la Ciudad de Buenos Aires, Argentina. 
 
