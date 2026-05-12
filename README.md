@@ -1,5 +1,7 @@
 🚴‍♂️ Análisis Estratégico: Expansión EcoBici CABA
+
 📋 Resumen del Proyecto
+
 Este proyecto analiza más de 26 millones de viajes del sistema EcoBici entre 2018 y 2025. El objetivo es diseñar una estrategia de expansión hacia la Zona Sur (Comunas 4 y 8) para recuperar el récord histórico de usuarios de 2019.
 
 💡 Key Insights (Descubrimientos Clave)
@@ -17,7 +19,7 @@ Propuesta: Integrar la salud en la rutina laboral mediante corredores seguros y 
 🛠️ Stack Tecnológico y Metodología
 Extracción y Limpieza (Python): Se utilizó Pandas para procesar el dataset masivo y extraer una muestra representativa de 31.000 viajes.
 
-Podés ver el código de limpieza aquí: [https://github.com/Nahirmendozacrespo/analisis-movilidad-ecobici/blob/main/notebooks/01_exploraci%C3%B3n_y_limpieza.ipynb]
+Podés ver el código de primera limpieza aquí: [https://github.com/Nahirmendozacrespo/analisis-movilidad-ecobici/blob/main/notebooks/01_exploraci%C3%B3n_y_limpieza.ipynb]
 
   1. Depuración de Anomalías (Outliers):
 Previo al muestreo, se aplicaron estrictas reglas de negocio para asegurar la calidad de los datos, eliminando ruidos operativos del sistema EcoBici:
@@ -50,3 +52,9 @@ Visualización: Desarrollo de un Dashboard interactivo en Power BI enfocado en e
 <img width="712" height="413" alt="image" src="https://github.com/user-attachments/assets/2ad906c9-f384-465a-ba20-bafa7052236e" />
 
 Drive para descargar el pbix. [https://drive.google.com/file/d/1nlstGKeUQ6B7BNPDiM61usNBC3F1xDZs/view]
+
+📊 Datos públicos del Gobierno de la Ciudad de Buenos Aires, Argentina. 
+
+Bicicletas Públicas - dataset
+[https://data.buenosaires.gob.ar/dataset/bicicletas-publicas]
+
