@@ -3,7 +3,7 @@
 <img width="2075" height="1200" alt="Proyecto_ecobici_page-0003" src="https://github.com/user-attachments/assets/47b6d4d1-ff43-4716-ab23-9afb6d6bdcbe" />
 <img width="2075" height="1200" alt="Proyecto_ecobici_page-0004" src="https://github.com/user-attachments/assets/67d759d6-6c14-4d6c-a44c-64b94c87aa50" />
 <img width="2075" height="1200" alt="Proyecto_ecobici_page-0005" src="https://github.com/user-attachments/assets/77a0e118-d650-4b25-baa0-67bc92cc628e" />
-<img width="2075" height="1200" alt="Proyecto_ecobici_page-0006" src="https://github.com/user-attachments/assets/8c53d41d-87e0-4ca7-911b-6f089cd75010" />
+<img width="984" height="547" alt="descarga (1)" src="https://github.com/user-attachments/assets/b7ada9d0-0cb5-43e6-a5e3-cd1f420d4536" />
 <img width="2075" height="1200" alt="Proyecto_ecobici_page-0007" src="https://github.com/user-attachments/assets/e9a84865-2879-4570-bdba-35aaccad82ad" />
 
 Drive para descargar el pbix. [https://drive.google.com/drive/folders/1hqR2Uf9m-05fDZEeEqVKhFB4C-wSr4QN?usp=sharing]
